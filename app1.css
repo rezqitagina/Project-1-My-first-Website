@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Quicksand:wght@500;700&display=swap');
+
+*{
+    box-sizing:  border-box;
+}
+
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    height: 50vh;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+header {
+    display: inline-flex;
+    background-color: #ddc9d9;
+
+}
+
+.jumbotron {
+    font-size: 10px;
+    padding: 30px;
+    background-color: #ad97a6;
+    text-align: left;
+    color: white;
+    position: static;
+}
+
+
+nav {
+    padding: 2px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 2rem;
+
+    display: inline-flex;  
+    gap: 1rem;
+    position: sticky;
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-block: 1rem;
+    z-index: 999;
+    position: sticky;
+    flex-direction: column;
+    position: sticky;
+}
+
+header.navbar-container .logo img {
+    width: 75px;
+    position: flex;
+    flex-direction: left;
+
+}
+
+header .navbar-container .title {
+    font-size: 2rem;
+    width: 100%;
+    position: sticky;
+    padding-left: 0;
+    row-gap: 0.5rem;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem 0.25rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:whitesmoke;
+    padding: 5rem 1.5rem;
+    border-radius: 99px;
+    transition: all .2s ease;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #edee99; 
+    color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-inline: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline-start: auto;
+    padding: 4rem 2rem;
+    flex: 5;
+
+    display: flex;
+    align-items: first baseline;
+}
+
+
+aside .row {
+    display: block;
+    font-size: 0.8rem;
+    max-width: 20em;
+    height: 35em;
+    align-content: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+
+figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#content {
+    flex: 5;
+}
+
+.card {
+    box-shadow: 0 2px 8px 2px rgb(190, 87, 108);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 10px;
+    color: #fff;
+    background-color:rgb(190, 87, 108);
+    font-size: smaller;
+    text-align: center;  
+}
+
+@media screen and (max-width: 768px) {
+    header .navbar-container {
+        flex-direction: column;
+    }
+
+    header .nav-list {
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+
+    main {
+        padding: 3rem 1rem;
+    }
+
+    main .aside {
+        align-self: stretch;
+    }
+
+    .jumbotron {
+        font-size: smaller;
+    }
+
+
+    aside .figure-img {
+        order: -1;
+        size-adjust: stretch;
+    }
+}
